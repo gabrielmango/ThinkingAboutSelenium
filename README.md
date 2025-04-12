@@ -13,5 +13,6 @@ Este repositório contém o material desenvolvido durante o curso prático sobre
 
 ## 📝 Aulas
 
-* [Aula 1: Introdução ao `expected_conditions` e `presence_of_element_located`](thinking_about_selenium/expected_conditions/aula_01/AULA_01.md)
-* [Aula 2: Interações com Elementos Dinâmicos e `element_to_be_clickable`](thinking_about_selenium/expected_conditions/aula_02/AULA_02.md)
+* 🚀 [Aula 1: Introdução ao `expected_conditions` e `presence_of_element_located`](thinking_about_selenium/expected_conditions/aula_01/AULA_01.md)
+* 🚀 [Aula 2: Interações com Elementos Dinâmicos e `element_to_be_clickable`](thinking_about_selenium/expected_conditions/aula_02/AULA_02.md)
+* 🚀 [Aula 3: `visibility_of_element_located` vs `presence_of_element_located`](thinking_about_selenium/expected_conditions/aula_03/AULA_03.md)
