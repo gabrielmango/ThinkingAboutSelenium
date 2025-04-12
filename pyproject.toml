@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "thinking-about-selenium"
+version = "0.1.0"
+description = ""
+authors = ["gabrielhmango <gabrielhmango@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.1.0"
+selenium = "^4.31.0"
+webdriver-manager = "^4.0.2"
+
+[tool.poetry.group.dev.dependencies]
+isort = "^6.0.1"
+blue = "^0.9.1"
+taskipy = "^1.14.1"
+
+[tool.taskipy.tasks]
+config_git_user = "git config --global user.name \"gabrielhmango\""
+config_git_email = "git config --global user.email \"gabrielhmango@gmail.com\""
+config_git_list = "git config --global --list"
+config_git = "task config_git_user && task config_git_email && task config_git_list"
+format = "blue . && isort ."
+pre_commit = 'task format && task config_git && git status && git add . && git status'
+commit = "git commit -m"
+post_commit = "git push"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
